@@ -88,7 +88,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                         <ApplyButton />
                     </div>
                     <h2 className="mt-10">{page.title.rendered}</h2>
-                    <h5>Salary: {page.acf?.salary}</h5>
+                    {/* <h5>Salary: {page.acf?.salary}</h5> */}
                     <h5>Hours: {page.acf?.type}</h5>
                     <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
                 </Prose>

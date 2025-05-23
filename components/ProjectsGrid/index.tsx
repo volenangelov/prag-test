@@ -17,7 +17,7 @@ export default function ProjectsGrid({ initialProjects, categories }: ProjectsGr
         : initialProjects;
     
     return (
-        <Container className="max-w-6xl !pt-20 !pb-20">
+        <Container className="max-w-6xl !pt-20">
             
             <div className="mb-12 flex flex-wrap gap-2 justify-center">
                 <button
@@ -90,6 +90,7 @@ export default function ProjectsGrid({ initialProjects, categories }: ProjectsGr
                                             className="object-cover w-full rounded-lg"
                                             width={project.featured_media_width || 600}
                                             height={project.featured_media_height || 600}
+                                            style={{ height: '235px' }}
                                         />
                                     </div>
                                 )}

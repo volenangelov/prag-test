@@ -116,7 +116,7 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ isOpen, onClose, menuItems }) => {
 
                 <div className="flex h-full items-center justify-center">
                     <div className="w-full max-w-4xl flex flex-row-reverse justify-center items-center gap-20">
-                        <ul className="mt-0 md:-mt-2 flex flex-col gap-4 md:gap-8 text-3xl text-white w-full md:w-1/2">
+                        <ul className="mt-0 md:-mt-2 flex flex-col gap-4 md:gap-6 text-3xl text-white w-full md:w-1/2">
                             {Object.entries(burgerMenu).map(([key, href]) => (
                                 <li
                                     key={href}
@@ -125,7 +125,7 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ isOpen, onClose, menuItems }) => {
                                 >
                                     <Link
                                         href={href}
-                                        className={`transition-all text-4xl md:text-6xl font-black text-left ${
+                                        className={`transition-all text-4xl md:text-6xl font-bold text-left ${
                                             activeMenuItem === key.toLowerCase()
                                                 ? 'text-white'
                                                 : 'text-pink-200 hover:text-white'
@@ -161,7 +161,7 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ isOpen, onClose, menuItems }) => {
                                                     <li key={index}>
                                                         <Link
                                                             href="#"
-                                                            className="transition-all whitespace-nowrap text-pink-200 hover:text-white font-black text-2xl text-left"
+                                                            className="transition-all whitespace-nowrap text-pink-200 hover:text-white font-bold text-2xl text-left"
                                                             onClick={onClose}
                                                         >
                                                             {subItem}
