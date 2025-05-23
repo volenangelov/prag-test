@@ -1,0 +1,54 @@
+input[type=text],
+input[type=email],
+textarea {
+    @apply resize-none bg-transparent border-b !rounded-none text-white focus:border-b focus:ring-0 !outline-none py-2 !border-white focus:border-white focus:outline-none;
+}
+
+
+.form-row {
+    @apply mt-4;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+textarea::placeholder {
+    color: #b1b1b1;
+}
+
+textarea {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+button[type=submit] {
+    @apply flex justify-center mx-auto mt-6 lg:mt-10 bg-transparent border-white rounded-full px-9 hover:bg-white hover:text-dark transition-colors duration-200 ease-in-out;
+}

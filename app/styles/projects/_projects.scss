@@ -1,0 +1,21 @@
+.single-project-content {
+    p {
+        @apply mb-4;
+    }
+
+    .wp-block-image {
+        @apply mt-6 mb-6 lg:mt-12;
+
+        img {
+            @apply rounded-xl block;
+        }
+    }
+
+    .wp-block-list {
+        @apply list-disc pl-4;
+
+        li {
+            @apply mb-2;
+        }
+    }
+}

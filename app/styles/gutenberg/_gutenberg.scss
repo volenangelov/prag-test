@@ -1,0 +1,19 @@
+.has-small-font-size {
+  @apply text-sm md:text-base;
+}
+
+.has-medium-font-size {
+  @apply text-lg md:text-2xl;
+}
+
+.has-large-font-size {
+  @apply text-xl md:text-4xl;
+}
+
+.has-x-large-font-size {
+  @apply text-3xl md:text-5xl;
+}
+
+.has-xx-large-font-size {
+  @apply text-3xl md:text-6xl;
+}
